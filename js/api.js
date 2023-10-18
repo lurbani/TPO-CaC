@@ -1,17 +1,11 @@
-var n = 1 + Math.floor(Math.random()*149);
-console.log(n);
+ async function getPoke(n){
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${n}`);
+    const data = await response.json();
+    const nombrePoke = document.getElementById("nombrePoke");
+    const imgPoke = document.getElementById("imgPoke");
+    nombrePoke.innerHTML = data.name;
+    imgPoke.src = data.sprites.other.dream_world.front_default;
 
-const url = `https://pokeapi.co/api/v2/pokemon/${n}`;
-var imgUrl = ""
-fetch(url)
-    .then(response => response.json())
-    .then(data => {console.log(data)
-    imgUrl = data.sprites.other.dream_world.front_default;
-});
-
- function mostrarPkm(){
-    if(imgUrl){
-        var imgPokemon = document.getElementById("pokemon");
-        imgPokemon.innerHTML = `<img src="${imgUrl}" alt="Pokemon aleatorio" id="pokemon"></img>`;
-   }
  }
+
+ getPoke(1 + Math.floor(Math.random()*149))
