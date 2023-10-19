@@ -1,9 +1,26 @@
+:root{
+  --fondo-color:rgba(56, 56, 56, 0.314);
+  --black-solid:rgba(56, 56, 56);
+  --color-font: white;
+  --primary-color:rgb(204, 90, 41);
+  --second-color: rgb(10, 41, 48);
+}
+
 body {
     background-image: url("../img/background.jpg");
+    padding: 0;
+    margin: 0;
+}
+
+
+h1,h2,h3,h4,h5,h6,p,a{
+    color: var(--color-font);
 }
 
 header {
-    color: aliceblue;
+    background-color: var(--fondo-color);
+    padding-left: 1em;
+    margin: 0;
 }
 
 .Navbar{
@@ -13,13 +30,19 @@ header {
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
+    height: 2.5em;
 }
 
 .Navbar a {
     text-decoration: none;
     color: aliceblue;
+    padding: 1em;
 }
 
+.Navbar a:hover {
+    background-color: var(--color-font);
+    color: var(--black-solid);
+}
 
 .Footer {
     color: aliceblue;
@@ -46,4 +69,40 @@ header {
     margin-right: 2vw;
     /*left: 20vw;
     width: 50vw;*/
+}
+
+/* section de productos*/
+
+.container-product{
+/*añadir grid autofill*/
+padding: 5vw;
+}
+
+.card-product{
+    width: 15em;
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    background: rgba(150, 150, 150, 0.125);
+    border-radius: 23px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+/* estilos carta de producto*/
+.card-product>*{
+    width: 100%;
+    margin: 0;
+}
+
+.card-header{
+    text-align: center;
+}
+
+.card-body{
+    height: 69%;
+}
+.card-footer{
+    padding: 12px;
 }
