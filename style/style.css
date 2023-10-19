@@ -8,9 +8,14 @@
 
 body {
     background-image: url("../img/background.jpg");
-
     padding: 0;
     margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -23,6 +28,7 @@ header {
     background-color: var(--fondo-color);
     padding-left: 1em;
     margin: 0;
+    margin-bottom: 1em;
 }
 
 .Navbar{
@@ -64,6 +70,10 @@ header {
     
     gap: 5px;
     margin-bottom: 5vh;
+
+    width: 96%;
+    border-radius: 23px;
+    
 }
 
 .Item img{
@@ -135,6 +145,19 @@ padding: 5vw;
 
 }
 
+/*estilos de formulario*/
+
+form{
+    width: 88vw;
+    margin-bottom: 13px;
+}
+
+.FormField{
+    margin-bottom: 15px;
+    border-radius: 13px;
+    width: 70%;
+}
+
 form{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 3vh 3vw 3vh 3vw;
@@ -178,3 +201,4 @@ form{
     
 }
 */
+
