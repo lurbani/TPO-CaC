@@ -174,6 +174,22 @@ form{
 
 }
 
+.header-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.none{
+    display: none;
+}
+
+#btn-menu{
+    background-color: transparent;
+    border: none;
+}
 
 @media (max-width: 700px) {
     .Item{
@@ -185,7 +201,29 @@ form{
         align-items: center;
         margin: 2vh 2vw 2vh 2vw;
     }
+
+    .Navbar{
+   display: none;
+    }
+
+    .i-header{
+        display: block;
+        cursor: pointer;
+    }
+
+    .Navbar nav{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+    }
+
+    #btn-menu{
+        display: block;
+    }
     
+    .Item img{
+        width: 80%;
+    }
 }
 
 /*
