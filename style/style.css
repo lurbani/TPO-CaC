@@ -161,6 +161,7 @@ form{
 form{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 3vh 3vw 3vh 3vw;
+    border-radius: 13px;
 }
 
 .FormField{
@@ -202,3 +203,6 @@ form{
 }
 */
 
+footer{
+    text-align: center;
+}
