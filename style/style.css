@@ -179,7 +179,7 @@ form{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: .5em;
 }
 
 .none{
@@ -189,6 +189,11 @@ form{
 #btn-menu{
     background-color: transparent;
     border: none;
+}
+
+.logo{
+    width: 1.5em;
+    height: 1.5em;
 }
 
 @media (max-width: 700px) {
@@ -220,6 +225,10 @@ form{
     #btn-menu{
         display: block;
     }
+
+    .i-header{
+        height:1.5em;
+    }
     
     .Item img{
         width: 80%;
@@ -243,4 +252,19 @@ form{
 
 footer{
     text-align: center;
+}
+
+.movimiento:hover{
+    transition: all ease;
+    animation-name: mov;
+    animation-duration: 3s;
+}
+
+@keyframes mov{
+    form{
+    transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(90deg);
+    }
 }
