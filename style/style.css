@@ -1,9 +1,15 @@
+@font-face {
+    font-family: opensans;
+    src: url("../fonts/OpenSans-Regular.ttf");
+  }
+  
 :root{
   --fondo-color:rgba(56, 56, 56, 0.314);
   --black-solid:rgba(56, 56, 56);
   --color-font: white;
   --primary-color:rgb(204, 90, 41);
   --second-color: rgb(10, 41, 48);
+  font-family: opensans;
 }
 
 body {
