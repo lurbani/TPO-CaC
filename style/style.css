@@ -61,8 +61,24 @@ header {
     color: var(--black-solid);
 }
 
+footer div{
+    background-color: var(--fondo-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+footer div img{
+    min-width: 32px;
+    width: 5vw;
+
+}
+
 .Footer {
     color: aliceblue;
+    font-size: 5vh;
 }
 
 .Item{
@@ -184,6 +200,10 @@ form{
     flex:1;
     width: 50%;
 
+}
+
+#consulta{
+    height: 10vh;
 }
 
 .header-title{
