@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercio</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+
+
+    <main >
+        <div class="productos">
+
+        <section class="container">
+            <div id="app">
+
+                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando">
+                        <p>Cargando .....</p>
+
+                    </section>
+
+                    <section v-else>
+
+                        <div class="productos">
+
+                            <div class="container-product" v-for="producto in productos">
+
+                                <!-- Estructura base para tarjeta de los productos-->
+
+                                <div class="card-product">
+                                    <div class="card-header">
+                                        <h2>{{producto.nombre}}</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <img :src="producto.imagen" :alt="producto.nombre">
+                                    </div>
+                                    <div class="card-footer">
+                                        <h3>Precio: ${{producto.precio}}</h3>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+        </section>
+    </div>
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/navbar_template.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="../js/ver_productos.js"></script>
+
+</body>
+
+</html>
