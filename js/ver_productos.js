@@ -28,9 +28,9 @@ const { createApp } = Vue
                     console.error(err);
                     this.error=true              
                 });
-        },
+        }//,
         // el id se necesita para buscar en la DB y eliminarlo
-        eliminar(id) {
+        /*eliminar(id) {
             
             const url = 'http://localhost:5000/borrar/'+id;
             var options = {
@@ -44,7 +44,7 @@ const { createApp } = Vue
                     location.reload();
                 })
         }
-
+*/
 
     },
     
