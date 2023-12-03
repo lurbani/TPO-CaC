@@ -30,7 +30,7 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 5vw;
+    /*gap: 0.5vw;*/
     flex-wrap: wrap;
 }
 
@@ -138,7 +138,7 @@ footer div img{
 
 .container-product{
 /*añadir grid autofill*/
-padding: 5vw;
+padding: 2vw;
 }
 
 .card-product{
@@ -190,6 +190,24 @@ padding: 5vw;
 
 }
 
+/*estilo de tabla de administracion*/
+.tabla_admin, th, tr, td{
+    color: aliceblue;
+    border: 1px solid;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.45);
+    /*max-width: 80vw;*/
+    /*max-height: 70vh;*/
+    text-align: center;
+}
+
+.admin_prd_img img{
+    size: 100%;
+    max-width: 25vw;
+    align-items: center;
+}
+
+
 /*estilos de formulario*/
 
 form{
@@ -219,7 +237,15 @@ form{
     width: 50%;
 
 }
-
+.boton{
+    font-size: 4vh;
+    padding: 1vh;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    background-color: black;
+    text-decoration: none;
+}
 #consulta{
     height: 10vh;
 }
