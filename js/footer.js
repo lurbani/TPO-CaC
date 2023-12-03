@@ -5,4 +5,3 @@ document.getElementsByTagName("footer")[0].innerHTML= `
 <h6 class="Footer">Grupo 26 - 2023</h6>
 </div>
 
-`
