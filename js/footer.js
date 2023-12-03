@@ -4,4 +4,4 @@ document.getElementsByTagName("footer")[0].innerHTML= `
 <img src="/img/socmedia_icons/ig.png" alt="ig icon">
 <h6 class="Footer">Grupo 26 - 2023</h6>
 </div>
-
+`

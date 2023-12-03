@@ -198,6 +198,7 @@ form{
 }
 
 .FormField{
+    color: white;
     margin-bottom: 15px;
     border-radius: 13px;
     width: 70%;
