@@ -9,10 +9,10 @@ document.getElementsByTagName("header")[0].innerHTML= `
 </div>
 <div class="Navbar" id="navbar">
     <nav>
-        <a href="/template/productos.html">Nuestros Productos</a>
-        <a href="/template/categoria2.html">Tipos de placas</a>
-        <a href="/template/devkits.html">Kits de desarrollo</a>
-        <a href="/template/contacto.html">Contacto</a>
+        <a href="./template/productos.html">Nuestros Productos</a>
+        <a href="./template/categoria2.html">Tipos de placas</a>
+        <a href="./template/devkits.html">Kits de desarrollo</a>
+        <a href="./template/contacto.html">Contacto</a>
     </nav>
 </div>
 
