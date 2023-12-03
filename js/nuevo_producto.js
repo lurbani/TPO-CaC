@@ -25,7 +25,7 @@ function guardar() {
             console.log("creado")
             alert("Grabado")
             // Devuelve el href (URL) de la página actual
-            window.location.href = "productos.html";  
+            window.location.href = "administrar.html";  
             
         })
         .catch(err => {

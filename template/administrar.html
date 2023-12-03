@@ -52,10 +52,10 @@
                                         </div>
                                         </td>
                                         <td>
-                                            <button type="button"  v-on:click="eliminar(producto.id)">Eliminar</button>
+                                            <button class="boton" type="button"  v-on:click="eliminar(producto.id)">Eliminar</button>
                                         </td>
                                         <td>
-                                            <a class="boton" :href="'templates/editar_producto.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&precio='+producto.precio+'&stock='+producto.stock +  '&imagen='+producto.imagen">Editar</a>
+                                            <a class="boton" :href="'./editar_producto.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&precio='+producto.precio+'&stock='+producto.stock +  '&imagen='+producto.imagen">Editar</a>
                                         </td>
                                     </tr>
                                 </tbody>
